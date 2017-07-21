@@ -1,13 +1,13 @@
-import java.util.List;
-import java.util.stream.Stream;
+package feauters.defaultmethod;
 
-public interface Splittable {
-    String SPACE = " ";
+import java.util.List;
+
+public interface Splittable extends Endings{
 
     List<String> splitWith(String text, String spliterator);
 
     default void showLongWords(String text){
-        Stream.of(text.split(SPACE))
+        splitWith(text, SPACE).stream()
                 .filter(word -> word.length() > 3)
                 .forEach(System.out::println);
     }

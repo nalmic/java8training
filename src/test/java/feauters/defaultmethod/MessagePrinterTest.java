@@ -1,3 +1,5 @@
+package feauters.defaultmethod;
+
 import org.junit.Test;
 
 public class MessagePrinterTest {
@@ -16,6 +18,12 @@ public class MessagePrinterTest {
     public void shouldDisplayLongWords(){
         MessagePrinter printer = new MessagePrinter();
         printer.showLongWords(message);
+    }
+
+    @Test
+    public void shouldEndingTitles(){
+        MessagePrinter printer = new MessagePrinter();
+        System.out.println(printer.showEndTitles());
     }
 
 }
