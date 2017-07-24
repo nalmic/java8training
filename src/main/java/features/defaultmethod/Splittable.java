@@ -1,4 +1,4 @@
-package feauters.defaultmethod;
+package features.defaultmethod;
 
 import java.util.List;
 
