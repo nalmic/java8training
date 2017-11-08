@@ -23,9 +23,9 @@ public class Conversion {
     private String part(int n, String full, String half, String next) {
     	if (n == 0) return "";
     	else if (n < 3) return String.join("", Collections.nCopies(n, full));
-    	else if (n == 4) return "I".concat(half);
+    	else if (n == 4) return full.concat(half);
     	else if (n < 9) return half.concat(String.join("", Collections.nCopies(n - 5, full)));
-    	else return "I".concat(next);
+    	else return full.concat(next);
     }
     
 
