@@ -2,7 +2,7 @@ package codewars;
 import org.junit.Test;
 import static org.hamcrest.CoreMatchers.*;
 import static org.junit.Assert.assertThat;
-public class TreeNode implements Cloneable{
+public class TreeNode {
 
     TreeNode left;
     TreeNode right;
